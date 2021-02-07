@@ -149,6 +149,7 @@ body {
 }
 
 .perspective-cube.no-backface .perspective-cube-face {
+    -webkit-backface-visibility: hidden; /* required for Safari */
     backface-visibility: hidden;
     background-color: rgba(185, 10, 40, 0.7);
 }
