@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="title" content="Perspective">
+        <meta name="description" content="Playing around with vanilla CSS transformations in 3D space">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="canonical" href="https://simon-robertson.github.io/perspective/">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=block">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons&display=block">
+        <link rel="stylesheet" href="./index.css">
+        <title>Perspective</title>
+    </head>
+    <body>
+        <main class="application">
+            <header class="application-header">
+                <h1>Perspective</h1>
+                <p>Playing around with vanilla CSS transformations in 3D space</p>
+            </header>
+            <div class="application-content">
+                <div class="perspective-container">
+                    <div class="perspective-plane" style="transform: translate3D(0, 0, -100px)">
+                        translate3d(0, 0, -100px)
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-plane" style="transform: translate3D(0, 0, 100px)">
+                        translate3d(0, 0, 100px)
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-plane" style="transform: rotate3d(1, 0, 0, 45deg)">
+                        rotate3d(1, 0, 0, 45deg)
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-plane" style="transform: rotate3d(0, 1, 0, 45deg)">
+                        rotate3d(0, 1, 0, 45deg)
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-plane" style="transform: rotate3d(0, 0, 1, 45deg)">
+                        rotate3d(0, 0, 1, 45deg)
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-plane animation-one">
+                        animation one
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-plane animation-two">
+                        animation two
+                    </div>
+                </div>
+                <div class="perspective-container">
+                    <div class="perspective-cube">
+                        <div class="perspective-cube-face face-1">
+                            <i class="material-icons">flutter_dash</i>
+                        </div>
+                        <div class="perspective-cube-face face-2">
+                            back
+                        </div>
+                        <div class="perspective-cube-face face-3">
+                            left
+                        </div>
+                        <div class="perspective-cube-face face-4">
+                            right
+                        </div>
+                        <div class="perspective-cube-face face-5">
+                            top
+                        </div>
+                        <div class="perspective-cube-face face-6">
+                            bottom
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="application-footer">
+                <p>Source code available at <a href="https://github.com/simon-robertson/perspective">GitHub</a>
+            </footer>
+        </main>
+    </body>
+</html>
