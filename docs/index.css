@@ -144,6 +144,15 @@ body {
     transform: translate3d(-100px, 0, 0)  rotateX(-90deg);
 }
 
+.perspective-cube.no-backface {
+    animation-delay: 1.5s;
+}
+
+.perspective-cube.no-backface .perspective-cube-face {
+    backface-visibility: hidden;
+    background-color: rgba(185, 10, 40, 0.7);
+}
+
 @keyframes animation-one {
     0% {
         transform: rotateX(0);
